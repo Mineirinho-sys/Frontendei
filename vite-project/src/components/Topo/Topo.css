@@ -1,0 +1,78 @@
+.anuncio{
+    background-color: var(--background);
+    color: var(--text-color);
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.anuncio-content{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.anuncio p{
+    display: inline-block;
+    animation: textoCorrido 10s linear infinite;
+}
+
+@keyframes textoCorrido {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: var(--text-color);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topo picture{
+    max-width: 100px;
+}
+
+.topo nav{
+    display: flex;
+    gap: 20px;
+}
+
+.topo nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    color: black;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.topo nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.topo nav a:hover{
+    color: var(--primary-color);
+}
+
+.topo nav a:hover::after {
+    width: 100%;
+}

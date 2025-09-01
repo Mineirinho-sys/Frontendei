@@ -76,3 +76,25 @@
 .topo nav a:hover::after {
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .topo {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .topo picture {
+        max-width: 30px;
+    }
+
+    .topo nav {
+        gap: 20px;
+    }
+
+    .topo nav a {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+}

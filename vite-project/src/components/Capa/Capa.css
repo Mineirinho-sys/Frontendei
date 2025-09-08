@@ -1,0 +1,98 @@
+.secaoCapa {
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5%;
+    font-family: var(--font-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.secaoCapa::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.texto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 800px;
+    text-align: center;
+    gap: 16px;
+    animation: fadeInUp 1s ease-in-out;
+    z-index: 2;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.texto h2 {
+    font-size: 60px;
+    color: var(--title);
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto h1 {
+    font-size: 140px;
+    color: var(--title);
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px) {
+    .texto h1{
+        font-size: 90px;
+    }
+
+    .texto h2{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px){
+    .secaoCapa {
+        background-position: center;
+        height: 40vh;
+    }
+
+    .texto {
+        align-items: center;
+        text-align: center;
+    }
+    .texto h2 {
+        font-size: 20px;
+    }
+
+    .texto h1 {
+        font-size: 40px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}

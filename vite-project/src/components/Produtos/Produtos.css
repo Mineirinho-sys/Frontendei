@@ -74,11 +74,71 @@
 .badge-venda {
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     background: var(--contrast);
     color: white;
     font-size: 14px;
     font-weight: bold;
     padding: 4px 8px;
     border-radius: 4px;
+}
+
+.card-info{
+    padding: 15px;
+    text-align: center;
+}
+
+.card-info h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.preco {
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+    .produtos_grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .card-info h3 {
+        font-size: 14px;
+    }
+
+    .preco {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos_grid{
+        grid-template-columns: 1fr;
+    }
+
+    .titulos h2 {
+        font-size: 2rem;
+    }
+
+    .titulos p {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .card-image img {
+        max-width: 70%;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
 }

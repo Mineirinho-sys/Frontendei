@@ -6,6 +6,7 @@
     --secondary-color: #f5deb3;
     --title: #fff1f1;
     --contrast: #fe8629;
+    --text-base: #333;
     --cta: #c5006c;
     --background: #1a1a1a;
     --text-color: #fff;
@@ -24,7 +25,7 @@
 }
 
 body {
-    color: var(--text-color);
+    color: var(--text-base);
 }
 
 img {

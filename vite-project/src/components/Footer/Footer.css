@@ -1,0 +1,25 @@
+footer {
+    background: #333;
+    color: white;
+    margin-top: 80px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+@media (max-width:768px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer p {
+        font-size: 0.75rem;
+    }
+}
+

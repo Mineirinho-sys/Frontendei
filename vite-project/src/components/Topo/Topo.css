@@ -27,13 +27,18 @@
     }
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
 .topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px;
     background-color: var(--text-color);
-    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
